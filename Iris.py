@@ -24,6 +24,7 @@ y=onehotencoder.fit_transform(y)
 
     print(X)
 
+ #create training and test set
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 
 labelencoder=LabelEncoder()
@@ -33,6 +34,8 @@ y=labelencoder.fit_transform(y)
 from sklearn.cross_validation import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=1/3, random_state=42)
 
+
+#create Linear Regression
 
 from sklearn.linear_model import LinearRegression
 
